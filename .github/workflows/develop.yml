@@ -1,0 +1,16 @@
+name: test demo
+
+on:
+    push:
+        branches: develop
+    workflow_dispatch:
+
+jobs:
+    test:
+        runs-on: vicky-runner
+
+    step:
+       - name: testone
+         user: actions/checkout@v4
+         with:
+            path: 'develop'
