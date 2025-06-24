@@ -2,7 +2,7 @@ name: test demo
 
 on:
   push:
-    branches: develop
+    branches: main
     
   workflow_dispatch:
 
@@ -14,4 +14,4 @@ jobs:
            - name: testone
              uses: actions/checkout@v4
              with:
-                path: 'develop'
+                path: 'main'
